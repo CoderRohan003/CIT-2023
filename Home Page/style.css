@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'myfont1';
+    src: url('/Fonts/moto-verse.ttf');
+}
+
+@font-face {
+    font-family: 'myfont2';
+    src: url('/Fonts/Antonio-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'myfont3';
+    src: url('/Fonts/ethnocentric_rg.otf');
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        height: 100vh;
+        background-image: url(/Images/Page\ 1\ PC\ Version.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-color: #061E4C;
+    }
+
+    .logo-home img {
+        position: fixed;
+        width: 10rem;
+        height: auto;
+        top: 3rem;
+        right: 2rem;
+    }
+
+    .font1 {
+        font-family: myfont1;
+        font-size: 1em;
+    }
+
+    .font2 {
+        font-family: myfont2;
+    }
+
+    .font3 {
+        font-family: myfont3;
+    }
+
+    .titleHeading-home {
+        color: #ffffff;
+        font-size: 7rem;
+        position: fixed;
+        display: flex;
+        top: 9rem;
+        left: 12rem;
+    }
+
+    .textAfterHeading-home {
+        color: #ffffff;
+        position: absolute;
+        top: 8rem;
+        left: -2rem;
+        font-size: 1.8rem;
+    }
+
+    .regis-home{
+        background-color: transparent;
+        border-right-style: none;
+    }
+
+    .startBtn-home a {
+        position: absolute;
+        padding: .9rem 1.4rem;
+        top: 10rem;
+        left: 13rem;
+        width: 11rem;
+        text-decoration: none;
+        color: #fdfdfd;
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+        overflow: hidden;
+        border: double 5px transparent;
+        border-image-slice: 100%;
+        border-radius: 35px;
+        border-image-slice: 1;
+        background-color: rgba(0, 64, 255, 0.153);
+    }
+
+
+    .startBtn-home a:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.4),
+                transparent);
+        transition: 0.5s;
+        transition-delay: 0.3s;
+    }
+
+    .rulesBtn-home a {
+        left: -1rem;
+    }
+
+    .rounded-corners-gradient-borders {
+        border: double 4px transparent;
+        border-radius: 40px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.542),
+                rgba(0, 0, 0, 0.542)),
+            linear-gradient(#0f1010, #0018223b);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        box-shadow: 0 5px 5px rgb(10, 9, 9);
+    }
+
+    .social {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .social-icons{
+        margin: 0 3px;
+    }
+
+    .socialMedia-home {
+        align-items: center;
+        display: inline-flex;
+        position: absolute;
+        font-size: 1.5rem;
+        bottom: .5rem;
+        color: #fefefe;
+        letter-spacing: 1px;
+    }
+
+    .socialMedia-home img {
+        margin-top: 0.3rem;
+        margin-left: 0.1rem;
+        margin-right: 0.3rem;
+        letter-spacing: 1rem;
+    }
+
+
+
+    /* -------------------------------Outer Border---------------------------------------- */
+
+    .outerBorder {
+        position: fixed;
+        border: 2px solid #4ebaf0;
+        width: 98.3%;
+        height: 98%;
+        top: 1.4%;
+        left: .5%;
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .glowing-circle {
+        -webkit-animation: glowing 1s ease-in-out infinite alternate;
+        -moz-animation: glowing 1s ease-in-out infinite alternate;
+        animation: glowing 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowing {
+        from {
+            box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #4e79f0,
+                0 0 4px rgba(0, 255, 255, 0.079), 0 0 5px #4ebaf025,
+                0 0 6prgba (78, 186, 240, 0.271) F0, 0 0 7px #4ebaf0;
+        }
+
+        to {
+            box-shadow: 0 0 2px #fff, 0 0 3px #4ebaf0, 0 0 4px #4ebaf0,
+                0 0 5px #4ebaf0, 0 0 6px #4ebaf0, 0 0 7px #4ebaf0, 0 0 8px #4ebaf0;
+        }
+    }
+}
+
+
+@media (min-width: 200px) and (max-width: 1023px) {
+    body {
+        /* width: 100vw; */
+        height: 100vh;
+        background-image: url(/Images/Page\ 1\ Mobile\ Version.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-color: #061E4C;
+    }
+
+
+    .font1 {
+        font-family: myfont1;
+        font-size: 1em;
+    }
+
+    .font2 {
+        font-family: myfont2;
+    }
+
+    .font3 {
+        font-family: myfont3;
+    }
+
+    .titleHeading-home {
+        justify-content: center;
+        color: #fff;
+        font-size: 5rem;
+        padding-top: 51vh;
+        position: relative;
+        font-optical-sizing: auto;
+    }
+
+    .textAfterHeading-home {
+        color: #fff;
+        height: 10rem;
+        margin-left: -1rem;
+        margin-top: -1rem;
+        text-align: center;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .textAfterHeading-home row {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .social {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .socialMedia-home {
+        align-items: center;
+        display: inline-flex;
+        position: absolute;
+        bottom: .3rem;
+        color: #fff;
+    }
+
+    .socialMedia-home img {
+        width: 1.3rem;
+        margin-top: 0.1em;
+        margin-left: 0.1rem;
+        margin-right: 0.3rem;
+        letter-spacing: 1rem;
+    }
+
+    .startBtn-home a {
+        position: relative;
+        top: 5vh;
+        right: 6vw;
+        justify-content: center;
+        text-align: center;
+        padding: 13px 15px;
+        text-decoration: none;
+        color: #fff;
+        font-size: .8rem;
+        letter-spacing: 4px;
+        overflow: hidden;
+        border-image-slice: 1;
+        background-color: rgba(221, 225, 234, 0.15);
+    }
+
+    .registerBtn-home a {
+        right: 6vw;
+    }
+
+    .rulesBtn-home a {
+        left: 9vw;
+    }
+
+    .rounded-corners-gradient-borders {
+        border: double 2px transparent;
+        border-radius: 20px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.542),
+                rgba(0, 0, 0, 0.542)),
+            linear-gradient(#4ebaf0, #0018223b);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        box-shadow: 0 5px 5px rgba(0, 0, 0.2);
+    }
+
+    .logo-home img {
+        position: fixed;
+        width: 5rem;
+        height: auto;
+        top: 1.7rem;
+        left: 2.3rem;
+    }
+
+    /* -------------------------------Outer Border---------------------------------------- */
+
+    .outerBorder {
+        position: fixed;
+        border: 2px solid #fff;
+        width: 95%;
+        height: 97%;
+        top: 2.6%;
+        left: 3%;
+        border-radius: 40px;
+    }
+
+    .glowing-circle {
+        -webkit-animation: glowing 1s ease-in-out infinite alternate;
+        -moz-animation: glowing 1s ease-in-out infinite alternate;
+        animation: glowing 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowing {
+        from {
+            box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #4e79f0,
+                0 0 4px rgba(0, 255, 255, 0.079), 0 0 5px #4ebaf025,
+                0 0 6prgba (78, 186, 240, 0.271) F0, 0 0 7px #4ebaf0;
+        }
+
+        to {
+            box-shadow: 0 0 2px #fff, 0 0 3px #4ebaf0, 0 0 4px #4ebaf0,
+                0 0 5px #4ebaf0, 0 0 6px #4ebaf0, 0 0 7px #4ebaf0, 0 0 8px #4ebaf0;
+        }
+    }
+}

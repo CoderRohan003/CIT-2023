@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CIT 2023 ISTE NIT Durgapur" />
+    <meta name="author" content="" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="outerBorder glowing-circle"></div>
+   <div class="logo-home ">
+       <img src="white iste.png" alt="ISTE Logo" />
+    </div>
+    
+    <div class="wrapper">
+        <form action="">
+            <h1>Register</h1>
+
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your Username" required>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your Number" required>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your College/School">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Department">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter year of study"  id="yearInput" oninput="autoFillYear()">
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
