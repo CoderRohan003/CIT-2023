@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;500;600;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style1.css"> 
+</head> 
+<style>
+    body{
+        
+    background-image: url('Page 3 PC Version.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    .glowing-circle {
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+    }
+    @keyframes glowing {
+    from {
+        box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #581dc4, 0 0 4px rgba(0, 255, 255, 0.079), 0 0 5px #4ebaf025, 0 0 6prgba (78, 186, 240, 0.271) F0, 0 0 7px #4ebaf0;
+    }
+  
+    to {
+      box-shadow: 0 0 2px #fff, 0 0 3px #4ebaf0, 0 0 4px #4ebaf0, 0 0 5px #4ebaf0, 0 0 6px #050f49, 0 0 7px #581dc4, 0 0 8px #4ebaf0;
+    }
+  }
+    /* lboard.html css */
+  .outerBorder {
+    position: absolute;
+            border: 2px solid #502eac;
+            width: 95%;
+            top: 2.5%;
+            border-radius: 3rem;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+  }
+  .containeraboutpage-1 {
+    border-style: solid;
+    border-width: 2;
+    padding: 15px;
+    margin: 0px;
+  
+  }
+.table-section {
+    margin-top: 45px;
+    font-family: 'Antonio', sans-serif;
+    color: #fff;
+  }
+  .table-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    color: #fff;
+  }
+  .table {
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .table thead {
+/* background-color: #111a2d; */
+color: white;
+  }
+  .table tr {
+    height: 60px;
+    text-align: center;
+    border-bottom: 1px solid rgba(39, 10, 94, 0.6);
+  }
+  /* .table tr:hover { */
+    /* background-color: rgba(39, 10, 94, 0.6); */
+  /* } */
+  /* .table tr.highlight-rank { */
+    /* background-color: rgba(39, 10, 94, 0.6); */
+  /* } */
+  .table td {
+    font-size: 16px;
+    padding-top: 22px;
+    padding-bottom: 3px;
+  }
+  
+  /* .slots{ */
+    /* margin-top:  20px; */
+  /* } */
+  /*.slots .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .slot-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    /* background-color: rgba(17, 26, 45, 1);
+    color: white;
+    font-family: "Antonio", sans-serif;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  .slot-button:hover {
+    color: white;
+  }*/
+  .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 26rem;
+    margin-top: 18rem;
+    row-gap: 2rem;
+}
+
+.input-box{
+    position: relative;
+    width: 48%;
+    height: 50px;
+    margin: 0;
+    padding-left: 32%;
+    background-color: transparent;
+
+}
+.input-field{
+    position: relative;
+    width: 48%;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 50px;
+    padding-top: 40%;
+    background-color: transparent;
+}
+.backButton{
+    position: absolute;
+    border: 3px solid #4e2dc7;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 0px 10px;
+    right:1.5%;
+    top:2%;
+    font-family:'Antonio', sans-serif;
+    border-left-style: none;
+    color: rgb(255, 255, 255);
+    background-color:transparent;
+    text-align: center;
+}
+
+.backButton:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.glowing-circle-backButton {
+
+    -webkit-animation: glowing 2s ease-in-out infinite alternate;
+    -moz-animation: glowing 2s ease-in-out infinite alternate;
+    animation: glowing 2s ease-in-out infinite alternate;
+}
+.backButton{
+    right:4%;
+    top:1.5%;
+  }
+  .table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* .slot-button{ */
+    /* font-size: 13px; */
+    /* margin-left: 5px; */
+  /* } */
+  .logo-imageaboutpage {
+    position: absolute;
+    width: 8rem;
+    height: auto;
+    top: 1rem;
+    left: -0.5rem;
+    
+  }
+
+  .slots-choose .options-block{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+    </style>
+<!-- <div class="slots"> -->
+    <!-- <div class="container"> -->
+        <!-- <a class="slot-button" href="{% url 'cit2020:lboard' 1  %}">Slot 1</a> -->
+        <!-- <a class="slot-button" href="{% url 'cit2020:lboard' 2  %}">Slot 2</a> -->
+        <!-- <a class="slot-button" href="{% url 'cit2020:lboard' 3  %}">Slot 3</a> -->
+        <!-- <a class="slot-button" href="{% url 'cit2020:lboard' 4 %}">Final Round</a> -->
+     
+    <!-- </div> -->
+       
+<!-- </div> -->
+
+<div class="table-section">
+    <div class="container">
+        <h1><strong> Leaderboard 
+        </strong></h1>
+        <h4 style="text-align: center;"><strong> Your rank is </strong></h4>
+        <img class="logo-imageaboutpage" src="iste.png" alt="ISTE" /></a>
+        <table class="table table-hover">
+            <!-- <thead> -->
+                <!-- <tr> -->
+                    <!-- <th scope="col">Rank</th> -->
+                    <!-- <th scope="col">Name</th> -->
+                    <!-- <th scope="col">Score</th> -->
+                <!-- </tr> -->
+            <!-- </thead> -->
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text">
+                </div>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text">
+                </div>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text">
+                </div>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div> <div class="input-box">
+                <div class="input-field">
+                    <input type="text">
+                </div>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text">
+                </div>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text">
+                </div>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <tbody>
+                <a href="{% url 'cit2020:navPage' %}"><button type="button" class="btn backButton glowing-circle-backButton"><-</button></a>
+ <!-- <tr class="highlight-rank" > -->
+                        <!-- <td scope="row">{{ player.rank }}</td> -->
+                        <!-- <td>{{ player.name }}</td> -->
+                        <!-- <td>{{player.final_score}}</td> -->
+                    <!-- </tr> -->
+                    <!-- {% else %} -->
+                    <!-- <tr> -->
+                        <!-- <td scope="row">{{ player.rank }}</td> -->
+                        <!-- <td>{{ player.name }}</td> -->
+                        <!-- <td>{{player.final_score}}</td> -->
+                    <!-- </tr> -->
+                    <!-- {% endif %} -->
+                    <!-- {% endfor %} -->
+                <!-- {% else %} -->
+                    <!-- {% for player in players %} -->
+                    <!-- {% if rank == player.rank %} -->
+                    <!-- <tr class="highlight-rank" > -->
+                        <!-- <td scope="row">{{ player.rank }}</td> -->
+                        <!-- <td>{{ player.name }}</td> -->
+                        <!-- <td>{{player.score}}</td> -->
+                    <!-- </tr> -->
+                    <!-- {% else %} -->
+                    <!-- <tr> -->
+                        <!-- <td scope="row">{{ player.rank }}</td> -->
+                        <!-- <td>{{ player.name }}</td> -->
+                        <!-- <td>{{player.score}}</td> -->
+                    <!-- </tr> -->
+                   
+            </tbody>
+        </table>
+        <!-- {%else  %} -->
+        <!-- <h1><strong> Leaderboard will be available soon ....  </strong></h1> -->
+        <!-- {% endif %} -->
+    </div>
+</div>

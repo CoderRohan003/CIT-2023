@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;500;600;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css"> 
+</head> 
+<style>
+    body {
+        font-family: 'Antonio';
+        height: 100vh;
+        /* width : 100vw; */
+        /* display: flex; */
+        background-image: url("Page 2 PC Version.png");
+        /* justify-content: center; */
+        background-repeat: repeat-y;
+        /* background-attachment: fixed; */
+        background-size: 100%;
+    }
+      
+  .outerBorder {
+    position: absolute;
+            border: 2px solid #502eac;
+            width: 95%;
+            top: 2.5%;
+            border-radius: 3rem;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+  }
+  
+  .containeraboutpage-1 {
+    border-style: solid;
+    border-width: 2;
+    padding: 15px;
+    margin: 0px;
+  
+  }
+  
+  .glowing-circle {
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glowing {
+    from {
+        box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #581dc4, 0 0 4px rgba(0, 255, 255, 0.079), 0 0 5px #4ebaf025, 0 0 6prgba (78, 186, 240, 0.271) F0, 0 0 7px #4ebaf0;
+    }
+  
+    to {
+      box-shadow: 0 0 2px #fff, 0 0 3px #4ebaf0, 0 0 4px #4ebaf0, 0 0 5px #4ebaf0, 0 0 6px #050f49, 0 0 7px #581dc4, 0 0 8px #4ebaf0;
+    }
+  }
+ 
+  .bg-containeraboutpage {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  .contaboutpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .logo-imageaboutpage {
+    height: 100px;
+    position: absolute;
+    left: 0;
+  }
+  
+  .main-headingaboutpage {
+    /* border-width: 3 */
+    padding: 8px 15px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.781);
+    text-align: center;
+    align-self: flex-end;
+    font-family : 'Antonio', sans-serif;
+  }
+  
+  .containeraboutpage-2 {
+    padding: 15px;
+    margin-top: 30px;
+    height: 80%;
+  }
+  .containeraboutpage-2 h1 , .containeraboutpage-2 h2{
+    letter-spacing : 5px;
+    margin-bottom : 1.5rem;
+    font-family:'Antonio', sans-serif;
+  }
+
+  .containeraboutpage-2 p{
+    font-family :'Antonio', sans-serif;
+  }
+
+  .backButton{
+    position: absolute;
+    border: 2px solid #4e2dc7;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 0px 10px;
+    right:1.5%;
+    top:2%;
+    font-family:'Antonio', sans-serif;
+    border-left-style: none;
+    color: rgb(255, 255, 255);
+    background-color:transparent;
+    text-align: center;
+}
+
+.backButton:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.glowing-circle-backButton {
+
+    -webkit-animation: glowing 2s ease-in-out infinite alternate;
+    -moz-animation: glowing 2s ease-in-out infinite alternate;
+    animation: glowing 2s ease-in-out infinite alternate;
+}
+
+.abouttheme{
+  color: white;
+  text-align: center;
+}
+
+.prize-section h2{
+  color: white;
+  text-align: center;
+}
+
+.sponsors-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sponsors-section h2{
+  text-align: center;
+  color: white;
+}
+.sponsors-section img , .prize-section img{
+  margin-top : 2rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .main-headingaboutpage {
+    font-size: 25px;
+    margin-top : 0.5rem; 
+  }
+  .logo-imageaboutpage {
+    position: absolute;
+    width: 8rem;
+    height: auto;
+    top: 1rem;
+    left: -0.5rem;
+    
+  }
+
+  .backButton{
+    right:4%;
+    top:1.5%;
+  }
+ 
+  .abouttheme{
+    color: white;
+    text-align: left;
+  }
+  .containeraboutpage-2 h1 , .containeraboutpage-2 h2{
+    letter-spacing : 5px;
+    text-align: center;
+}
+
+}
+
+
+
+
+</style>
+<div class="bg-containeraboutpage">
+  <div class="containeraboutpage-1 outerBorder glowing-circle container-fluid">
+    <a href="{% url 'cit2020:navPage' %}"><button type="button" class="btn backButton glowing-circle-backButton"><-</button></a>
+    <div class="text-center contaboutpage">
+      <img class="logo-imageaboutpage" src="iste.png" alt="ISTE" /></a>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width , initial-scale=2.0">
+      <link rel="stylesheet" href="style.css"> 
+      <h class="main-headingaboutpage">About</h>
+    </div>
+    <div class="containeraboutpage-2">
+      <div class="abouttheme">
+      <h1>Cognitive Intelligence Test 7.0</h1>
+      <p>CIT 7.0 is one-of-a-kind opportunity for all aspiring students as we unveil exhilarating challenges of national standard over the realms of basic mathematical aptitude, logical & verbal reasoning, and data interpretation. Not only does CIT implant an idea of various acclaimed aptitude tests like CAT, but our flagship event also never fails to provide a simulation of the overall screening procedure of the hiring companies. This is the most anticipated online event to compete for intellectual glory among multitude of striving contestants.</p>
+      <br>
+      <br>
+      <h2><strong>Schedule For CIT 7.0</strong></h2>
+      <b>Preliminary Round:</b> Candidates can attempt CIT only once in any of the three available slots:
+      <li><b>Slot 1:</b> January 18, 2024 (9:00 PM - 9:45 PM)</li>
+      <li><b>Slot 2:</b> January 19, 2024 (9:00 PM - 9:45 PM)</li>
+      <li><b>Slot 3:</b> January 20, 2024 (9:00 PM - 9:45 PM)</li>
+      <b>Final Round:</b> Candidates selected for final round will receive a mail with details
+      <li><b>Final:</b> January 22, 2024 (9:00 PM - 9:45 PM)</li>
+</div>
+<br>
+<br>
+<div class="prize-section">
+  <h2><strong>Cash PRIZES worth 3K For CIT 7.0</strong></p>
+     <img src="ims.png" alt="PRIZES">
+</div>
+<br>
+<br>
+<div class="sponsors-section ">
+  <h2><strong>EVENT SPONSOR</strong></p>
+     <img src="ims.png" alt="IMS" style="margin-right: 10px; padding-bottom: 0; border-radius: 15px;">
+    <img src="iocl.png" alt="IOCL" -->
+                    <!-- <style="padding-bottom: 0; border-radius: 5px; margin-right: 10px;"> -->
+</div>
+    </div>
+  </div>
+</div>
+</html>
