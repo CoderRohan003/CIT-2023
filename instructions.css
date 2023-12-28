@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'downloadedFont';
+    src: url('fonts\ethnocentric_rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url('page2 PC version.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Antonio', sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0px auto;
+    overflow-x: hidden;
+    height: 100%;
+    max-height: 100%;
+}
+
+.white-border-div { 
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border: 1.8px solid #4ebaf0;
+    border-radius: 35px;
+    padding: 25px;
+    padding-bottom: 20px;
+    width: 98.3%;
+    height: 98%;
+    box-sizing: border-box;
+    margin: 8px;
+}
+
+.nav-bar {
+    margin: -0.5%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: fit-content ;
+    height: 20%;
+    width: 95%;
+}
+
+.logo{
+    display: flex;
+    height: 5em;
+    width: 5.8%;
+}
+
+
+.backButton{ 
+    border-radius: 25px;
+    height: 2.5em;
+    width: 3em;
+    border-color: #4ebaf0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+h1{
+    margin: 0;
+}
+
+.instructions-title{
+    /* display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start;*/
+    font-family: 'downloadedFont';
+    padding-right: 4.2em;
+    padding-bottom: 1em;
+    font-size:larger;
+}
+
+
+.content-section{
+    border: 0.6px solid white;
+    padding: 5px;
+    margin: 0px;
+    margin-top: 1rem;
+    border-radius: 40px;
+    font-size:x-large;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.content-section ul {
+    margin: top 1em;;
+}
+
+.content-section li {
+    margin-bottom: 1.2em;
+    margin-top: 1.2em;
+} 
+
+@media (max-width: 1420px) {
+    .instructions-title{
+        font-size: medium;
+    }
+}
+
+@media (max-width: 1200px) {
+    .instructions-title{
+        font-size: small;
+    }
+}
+
+@media (max-width: 930px) {
+    .instructions-title{
+        font-size: x-small;
+    }
+
+    .content-section{
+        font-size: large;
+    }
+
+    .content-section ul {
+        margin: top 1em;;
+    }
+    
+    .content-section li {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    } 
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: url('Page 2 Mobile Version-.png');
+        background-size: cover;
+    }
+
+    .nav-bar {
+        height: 15%;
+    }
+
+    .logo {
+        height: 4em; 
+        width: 4.5%; 
+    }
+
+    .backButton {
+        height: 2em; 
+        width: 2.5em;
+    }
+
+    .white-border-div {
+        padding: 12px; 
+    }
+
+    .instructions-title {
+        padding-right: 5em; 
+        padding-top: 1.2em; 
+        font-size: medium;
+    }
+
+    .content-section {
+        font-size: large;
+    }
+}
+
+/* @media(max-width:700px){ 
+    body{
+        background-position: center;
+    }
+}
+*/
+
+@media(max-width:700px){ 
+    .instructions-title{
+        padding-top: 1em;
+        /* padding-bottom: 2em; */
+        padding-right: 4em;
+    }
+}
+
+@media(max-width:680px){
+    .instructions-title{
+        padding-top: 0.5em;
+        /* padding-bottom: 2.5em; */
+        /* padding-left: 3em; */
+        font-size: small;
+    }
+}
+
+@media(max-width:630px){
+    .instructions-title{
+        padding-top: 0.5em;
+        /* padding-bottom: 2.7em; */
+        /* padding-left: 7em; */
+        font-size: small;
+    }
+}
+
+@media(max-width:590px){
+    .instructions-title{
+        /* padding-top: 0.5em; */
+        font-size: small;
+        padding-bottom: 2em;
+        padding-left: 0;
+        padding-right: 4.5em;
+    }
+}
+
+@media(max-width:535px){
+    .instructions-title{
+        font-size: x-small;
+        padding-right: 5.5em;
+        padding-top: 1.5em;
+    }
+
+    .nav-bar{
+        height: 10%;
+    }
+
+    .logo{
+        height: 4em;
+        width:4em ;
+    }
+
+    .back-button{
+        padding-right: 2em;
+    }
+}
+
+@media(max-width:495px){
+    .instructions-title{
+        padding-right: 7em;
+    }
+}
+
+@media(max-width:450px){
+    .nav-bar{
+        padding-left: 1em;
+        padding-right: 2em;
+        height: 8%;
+    }
+
+    .instructions-title{
+        padding-right: 8em;
+        padding-bottom: 3em;
+    }
+
+    .logo{
+        height: 3.5em;
+        width: 3.5em;
+    }
+
+    .back-button{
+        padding-right: 0;
+    }
+}
+
+@media(max-width:430px){
+    .back-button{
+        padding-right: 0;
+    }
+
+    .instructions-title{
+        padding-left: 2em;
+    }
+}
+
+@media(max-width:410px){
+    .instructions-title{
+        padding-right: 6em;
+    }
+}
+
+@media(max-width:390px){
+    .instructions-title{
+        font-size: xx-small;
+    }
+
+    .back-button{
+        padding-left: 2em;
+        padding-right: 0;
+    }
+}
+
+.glowing-circle {
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+ }
+ 
+ @keyframes glowing {
+    from {
+        box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #4e79f0,
+            0 0 4px rgba(0, 255, 255, 0.079), 0 0 5px #4ebaf025,
+            0 0 6prgba (78, 186, 240, 0.271) F0, 0 0 7px #4ebaf0;
+    }
+ 
+    to {
+        box-shadow: 0 0 2px #fff, 0 0 3px #4ebaf0, 0 0 4px #4ebaf0,
+            0 0 5px #4ebaf0, 0 0 6px #4ebaf0, 0 0 7px #4ebaf0, 0 0 8px #4ebaf0;
+    }
+ }
+ 
+
